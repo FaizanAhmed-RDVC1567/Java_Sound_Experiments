@@ -20,7 +20,7 @@ public class CustomBeep {
             line.write(buf, 0, 1);
         }
 
-        // The final part is to properly close the line.
+        // The final part is to properly close the line (release resources).
         line.drain();
         line.close();
     }
