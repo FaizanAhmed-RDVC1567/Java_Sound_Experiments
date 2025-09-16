@@ -38,14 +38,15 @@ jobs:
         mvn -X -B package --file SimpleBeep/pom.xml
       working-directory: SimpleBeep
 
-    - name: List files in SimpleBeep
-      run: ls -l SimpleBeep
+    - name: Print working directory
+      run: pwd
 
     - name: List repo structure
       run: ls -l
+      working-directory: SimpleBeep
 
     - name: List files in SimpleBeep
-      run: ls -l SimpleBeep
+      run: ls -l SimpleBeep/
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
