@@ -42,8 +42,10 @@ jobs:
       run: pwd
 
     - name: List repo structure
-      run: ls -l
-      working-directory: SimpleBeep
+      run: |
+        cd SimpleBeep
+        ls -l
+      #working-directory: SimpleBeep
 
     - name: List files in SimpleBeep
       run: ls -l SimpleBeep/
