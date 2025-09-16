@@ -48,7 +48,7 @@ jobs:
       #working-directory: SimpleBeep
 
     - name: List files in SimpleBeep
-      run: ls -l SimpleBeep/
+      run: ls -l /home/runner/work/Java_Sound_Experiments/Java_Sound_Experiments/SimpleBeep
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
